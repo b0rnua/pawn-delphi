@@ -195,7 +195,7 @@ begin
         end else begin
             percentPerDay := MyUtils.getPercentPerDay(contractTypeGroup,StrToFloat(Label7.Caption),num_d, deliverer.getId, StrToInt(id));
             percentTotal := percentPerDay * num_d;
-           // ShowMessage(FloatToStr(percentPerDay));
+           // ShowMessage(FloatToStr(percentPerDay)); Comment for git test
         end;
         if specialCondition then percentPerDay := newContract.setSpecialConditions(percentPerDay);
         //Label4.Caption := FloatToStr(percentPerDay - dReducePercent);
